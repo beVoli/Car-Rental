@@ -1,10 +1,16 @@
 import "./CarDescription.css";
+import AudiA1 from "../../images/audia1.jpg";
+import Benz from "../../images/benz.jpg";
+import Bmw320 from "../../images/bmw320.jpg";
+import Golf6 from "../../images/golf6.jpg";
+import PassatCC from "../../images/passatcc.jpg";
+import Camry from "../../images/toyotacamry.jpg";
 
 const CarDescription = () => {
   return (
-    <div>
+    <div className="car-description">
       <div className="car-preview">
-        <img src="/" alt="Car Image"></img>
+        <img src={Bmw320} alt="Car Image"></img>
       </div>
       <div className="pick-description">
         <div className="description-price">
