@@ -1,6 +1,7 @@
 import ModelBtn from "./ModelBtn";
 import "./CarModel.css";
 
+
 const CarModel = (props) => {
 
   const carInfoHandler = (car) => {

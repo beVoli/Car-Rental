@@ -1,11 +1,42 @@
+
 .picker-box {
+  width: 100%;
   display: grid;
-  align-items: center;
-  gap: 1.5rem;
+  gap: 0.8rem;
+
+}
+
+@media (min-width: 1000px) {
+  .picker-box {
+    justify-items: center;
+    gap: 1.5rem;
+  }
 }
 
 .model-pick {
-  width: 15rem;
-  height: 2.4rem;
+  width: 100%;
+  height: 2.8rem;
   cursor: pointer;
+  border: 1px solid var(--clr-secondary-900);
+  border-radius: 10px 0 10px 0;
+  color: var(--clr-secondary-900);  
+  transition: all 300ms;
+}
+
+@media(min-width: 1000px) {
+  .model-pick {
+    width:15rem;
+  }
+}
+
+.model-pick:hover,
+.model-pick:focus-visible {
+  border: none;
+  background: var(--clr-secondary-900);
+  color: var(--clr-primary);
+}
+
+.active {
+  color: var(--clr-primary);
+  background-color: var(--clr-secondary-900);
 }

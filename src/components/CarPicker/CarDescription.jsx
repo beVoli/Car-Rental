@@ -1,15 +1,13 @@
-import { useState } from "react";
 import "./CarDescription.css";
 
-const CarDescription = props => {
+const CarDescription = (props) => {
   return (
     <div className="car-description">
       <div className="description-price">
         $ <span>{props.car.price}</span> / rent per day
       </div>
       <div className="description-table">
-
-      <div className="description-row flex-group">
+        <div className="description-row flex-group">
           <p>Mark</p>
           <span>{props.car.mark}</span>
         </div>

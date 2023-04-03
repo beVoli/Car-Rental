@@ -60,13 +60,15 @@ h6 {
   --fs-700: 1.75rem;
   --fs-900: 2.5rem;
 
-  --clr-primary-rgb: 255, 74, 46;
+  --clr-primary-rgb: 70, 244, 151;
   --clr-secondary-rgb-100: 255, 255, 255;
+  --clr-secondary-rgb-800: 20, 17, 21;
   --clr-secondary-rgb-900: 0, 0, 0;
 
   --clr-primary: rgb(var(--clr-primary-rgb));
   --clr-secondary-100: rgb(var(--clr-secondary-rgb-100));
   --clr-secondary-900: rgb(var(--clr-secondary-rgb-900));
+  --clr-secondary-800: rgb(var(--clr-secondary-rgb-800));
 }
 
 /* Utility classes */
@@ -79,7 +81,7 @@ body {
   font-family: var(--ff-default);
   font-weight: var(--fw-regular);
   font-size: var(--fs-400);
-  color: #000;
+  color: var(--clr-secondary-900);
 }
 
 .container {
@@ -87,4 +89,11 @@ body {
   min-height: 100vh;
   display: grid;
   place-items: center;
+}
+
+@media (max-width: 600px) {
+  :root {
+    --fs-600: 1.25rem;
+    --fs-900: 2rem;
+  }
 }

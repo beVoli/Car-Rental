@@ -1,19 +1,33 @@
 .picker-container {
-  max-width: 75rem;
+  max-width: 70rem;
   margin-inline: auto;
-  /* padding: 1.5rem; */
-  /* border: 1px solid blue; */
+  display: grid;
+  gap: 1.5rem;
+  padding: 1rem;
 }
 
 .section-picker {
   width: 100%;
   display: grid;
+  justify-items: center;
 }
 
-@media (min-width: 600px) {
+.car-preview {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+@media (min-width: 1000px) {
   .section-picker {
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-items: center;
   }
+
+    .car-preview {
+      min-width: 25rem;
+    }
 }
