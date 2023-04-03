@@ -69,6 +69,12 @@ h6 {
   --clr-secondary-900: rgb(var(--clr-secondary-rgb-900));
 }
 
+/* Utility classes */
+
+.flex-group {
+  display: flex;
+}
+
 body {
   font-family: var(--ff-default);
   font-weight: var(--fw-regular);

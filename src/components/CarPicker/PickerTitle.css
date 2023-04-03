@@ -1,0 +1,23 @@
+.section-title {
+  max-width: 40rem;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.models {
+  font-size: var(--fs-600);
+  font-weight: var(--fw-semi-bold);
+  line-height: 1;
+}
+
+.fleet {
+  font-size: var(--fs-900);
+  font-weight: var(--fw-bold);
+  line-height: 1.5;
+
+}
+
+.fleet-option {
+  font-size: var(--fs-400);
+  color: rgba(var(--clr-secondary-rgb-900), 0.7);
+}

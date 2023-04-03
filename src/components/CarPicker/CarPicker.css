@@ -1,31 +1,19 @@
 .picker-container {
- min-width: min(81.25rem, 90%);
-}
-
-.section-title {
-  max-width: 40rem;
+  max-width: 75rem;
   margin-inline: auto;
-  text-align: center;
+  /* padding: 1.5rem; */
+  /* border: 1px solid blue; */
 }
 
 .section-picker {
-  display: flex;
+  width: 100%;
+  display: grid;
 }
 
-
-.models {
-  font-size: var(--fs-600);
-  font-weight: var(--fw-semi-bold);
+@media (min-width: 600px) {
+  .section-picker {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+  }
 }
-
-.fleet {
-  font-size: var(--fs-900);
-  font-weight: var(--fw-bold);
-
-}
-
-.fleet-option {
-  font-size: var(--fs-400);
-  color: rgba(var(--clr-secondary-rgb-900), 0.7);
-}
-

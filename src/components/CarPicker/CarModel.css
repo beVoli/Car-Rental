@@ -1,4 +1,11 @@
- .picker-box {
-  display: flex;
-  flex-direction: column;
-} 
+.picker-box {
+  display: grid;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.model-pick {
+  width: 15rem;
+  height: 2.4rem;
+  cursor: pointer;
+}
