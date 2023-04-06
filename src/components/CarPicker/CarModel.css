@@ -1,9 +1,7 @@
-
 .picker-box {
   width: 100%;
   display: grid;
   gap: 0.8rem;
-
 }
 
 @media (min-width: 1000px) {
@@ -17,15 +15,16 @@
   width: 100%;
   height: 2.8rem;
   cursor: pointer;
+  background: var(--clr-secondary-100);
   border: 1px solid var(--clr-secondary-900);
   border-radius: 10px 0 10px 0;
-  color: var(--clr-secondary-900);  
+  color: var(--clr-secondary-900);
   transition: all 300ms;
 }
 
-@media(min-width: 1000px) {
+@media (min-width: 1000px) {
   .model-pick {
-    width:15rem;
+    width: 15rem;
   }
 }
 
