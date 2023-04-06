@@ -1,6 +1,11 @@
 import "./CarDescription.css";
 
 const CarDescription = (props) => {
+
+  const openModalHandler = () => {
+      props.onOpenModal();
+  }
+
   return (
     <div className="car-description">
       <div className="description-price">
@@ -37,7 +42,7 @@ const CarDescription = (props) => {
         </div>
       </div>
 
-      <button className="btn-reserve">Reserve Now</button>
+      <button className="btn-reserve" onClick={openModalHandler}>Reserve Now</button>
     </div>
   );
 };

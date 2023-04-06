@@ -53,10 +53,12 @@ h6 {
   --fw-black: 700;
 
   --fs-200: 0.625rem;
+  --fs-250: 0.8125rem;
   --fs-300: 0.875rem;
   --fs-400: 1rem;
   --fs-500: 1.125rem;
   --fs-600: 1.5rem;
+  --fs-650: 1.625rem;
   --fs-700: 1.75rem;
   --fs-900: 2.5rem;
 
@@ -69,6 +71,8 @@ h6 {
   --clr-secondary-100: rgb(var(--clr-secondary-rgb-100));
   --clr-secondary-900: rgb(var(--clr-secondary-rgb-900));
   --clr-secondary-800: rgb(var(--clr-secondary-rgb-800));
+
+  --clr-star: #fc2f2f;
 }
 
 /* Utility classes */
