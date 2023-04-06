@@ -73,7 +73,7 @@ const CarForm = ({ onFormSubmit }) => {
                   required
                   type="number"
                   min="18"
-                  max="70"
+                  max="99"
                   placeholder="Enter your age"
                 ></input>
                 <p className="input-help">This field is required.</p>
@@ -117,11 +117,7 @@ const CarForm = ({ onFormSubmit }) => {
             </div>
           </div>
 
-          <button
-            className="form-submit"
-            type="submit"
-            onClick={formSubmitHandler}
-          >
+          <button className="form-submit" type="submit">
             Reserve Now
           </button>
         </form>

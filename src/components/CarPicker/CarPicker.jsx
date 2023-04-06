@@ -5,8 +5,8 @@ import CarModel from "./CarModel";
 import CarForm from "./CarForm";
 import "./CarPicker.css";
 
-const CarPicker = (props) => {
-  const [currentCar, setCurrentCar] = useState(props.models[0]);
+const CarPicker = ({models}) => {
+  const [currentCar, setCurrentCar] = useState(models[0]);
   const [modalActive, setModalActive] = useState(false);
 
   const changeInfoHandler = (car) => {
@@ -26,12 +26,12 @@ const CarPicker = (props) => {
       <div className="picker-container">
         <PickerTtitle />
         <div className="section-picker">
-          <CarModel models={props.models} onCarInfo={changeInfoHandler} />
+          <CarModel models={models} onCarInfo={changeInfoHandler} />
           <div className="car-preview">
             <img src={currentCar.img} alt="Car Image"></img>
           </div>
           <CarDescription
-            models={props.models}
+            models={models}
             car={currentCar}
             onOpenModal={openModalHandler}
           />
