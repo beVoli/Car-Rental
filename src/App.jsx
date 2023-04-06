@@ -3,12 +3,12 @@ import CarDescription from "./components/CarPicker/CarDescription";
 import CarModel from "./components/CarPicker/CarModel";
 import CarPicker from "./components/CarPicker/CarPicker";
 
-import AudiA1 from "./images/Cars/audia1.jpg";
-import Benz from "./images/Cars/benz.jpg";
-import Bmw320 from "./images/Cars/bmw320.jpg";
-import Golf6 from "./images/Cars/golf6.jpg";
-import PassatCC from "./images/Cars/passatcc.jpg";
-import Camry from "./images/Cars/toyotacamry.jpg";
+import AudiA1 from "./images/Cars/audia1.png";
+import Benz from "./images/Cars/benz.png";
+import Bmw320 from "./images/Cars/bmw320.png";
+import Golf6 from "./images/Cars/golf6.png";
+import PassatCC from "./images/Cars/passatcc.png";
+import Camry from "./images/Cars/toyotacamry.png";
 
 const CAR_MODELS = [
   {

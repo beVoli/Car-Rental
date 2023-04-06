@@ -1,12 +1,19 @@
-const ModelBtn = (props) => {
-  const showInfoHandler = (e) => { 
-    const car = props.model;
-    props.onShowInfo(car);
-  }
-  
+import { useState } from "react";
+
+const ModelBtn = ({ model, index, coloringButton, btnID, onShowInfo }) => {
+  const showInfoHandler = () => {
+    onShowInfo(model);
+  };
+
   return (
-    <button className={`model-pick ${props.active ? 'active' : ''}`} onClick={showInfoHandler}>
-      {props.model.mark + " " + props.model.model}
+    <button
+      className={`${coloringButton(index)} model-pick`}
+      onClick={() => {
+        btnID(index);
+        showInfoHandler();
+      }}
+    >
+      {model.mark + " " + model.model}
     </button>
   );
 };
