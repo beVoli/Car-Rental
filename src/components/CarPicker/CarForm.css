@@ -1,6 +1,7 @@
 .form-container {
   position: fixed;
   height: 100vh;
+  height: 100dvh;
   display: grid;
   overflow-y: scroll;
   z-index: 10;
